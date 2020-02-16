@@ -1,0 +1,424 @@
+@import 'mixins.less';
+@import 'variables.less';
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+/*1170*/
+@media only screen and (max-width :1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	// .menu_opened{
+	// 	overflow: hidden;
+	// }
+	// .main_menu {
+	// 	position: fixed;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	top: 0;
+	// 	z-index: 1000;
+	// 	background-color: rgba(112,128,144,.5);;
+	// 	transition: all .3s ease-in-out;
+	// 	transform: translateX(-100%);
+	// 	display: flex;
+	// 	justify-content: flex-start;
+	// 	padding-left: 50px;
+	// 	ul{
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 		justify-content: center;
+	// 		li{
+	// 			.d_flex(center; center);
+	// 			padding: 10px;
+	// 			flex-grow: 0;
+	// 			.submenu{
+	// 				transform-origin: 0 0;
+	// 				transform: scale(0, 0);
+	// 				left: 100%;
+	// 				top: 47%;
+	// 			}
+	// 			&:hover{
+	// 				.submenu{
+	// 					transform: scale(1, 1);
+	// 				}
+	// 			}
+	// 		}
+
+	// 	}
+	// }
+	// .toogle_menu_mobile{
+	// 	display: block;
+	// 	.d_flex(column; center; flex-end);
+	// 	.menu_wrap{
+	// 		.d_flex(column; center; flex-end);
+	// 		border: 1px solid @sub_bgc;
+	// 		padding: 2px 5px;
+	// 		z-index: 10001;
+	// 		span{
+	// 			display: inline-block;
+	// 			width: 21px;
+	// 			height: 2px;
+	// 			background-color: @sub_bgc;
+	// 			margin-top: 2px;
+	// 			margin-bottom: 2px;
+	// 		}
+	// 	}
+	// }
+	// .menu_opened .toogle_menu_mobile .menu_wrap{
+	// 	span:nth-of-type(1){
+	// 		transform-origin: 0 0;
+	// 		transform: translateX(3px) rotate(396deg);
+	// 	}	
+	// 	span:nth-of-type(2){
+	// 		opacity:0;
+	// 	}
+	// 	span:nth-of-type(3){
+	// 		transform-origin: 0 0;
+	// 		transform: translateX(2px) rotate(-397deg);
+	// 	}
+	// }
+
+
+	//////////??????
+	// .section_comments_wrap{
+	// 	margin-left: 50px;
+	// 	margin-right: 50px;
+	// }
+	///////////////////
+
+
+
+	// .main_slogan_wrap {
+	// 	.slogan{
+	// 		font-size: 35px;
+	// 	}
+	// }
+	// .count_content{
+	// 	.about_us__count_number{
+	// 		p{
+	// 			font-size: 15px;
+	// 		}
+	// 	}
+	// }
+	// .comments_item{
+	// 	.user_comments{
+	// 		p{
+	// 			font-size: 14px;
+	// 		}
+	// 	}
+	// }
+	// .slick-prev{
+	// 	left: -10%;
+	// }
+	// .slick-next{
+	// 	left: 107%;
+	// }
+	// .information_wrap{
+	// 	margin-bottom: 20px;
+	// }
+	// .card{
+	// 	.card_header{
+	// 		.card_title{
+	// 			font-size: 24px;
+	// 		}
+	// 	}
+	// 	.card_content{
+	// 		.content_wrap{
+	// 			font-size: 18px;
+	// 		}
+	// 	}
+	// }
+	// .book_tour_wrap{
+	// 	.title{
+	// 		margin-bottom: 10px;
+	// 	}
+	// }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+// 	.main_slogan_wrap {
+// 		.slogan{
+// 			font-size: 24px;
+// 		}
+// 	}
+// 	.count_content{
+// 		.about_us__count_number{
+// 			padding-bottom: 15px;
+// 			.count_number{
+// 				font-size: 30px;
+// 			}
+// 		}
+// 	}
+// 	.main_menu{
+// 		ul{
+// 			li{
+// 				padding: 5px 10px;
+// 				a{
+// 					padding: 5px 0;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.user_comments{
+// 		padding-top: 20px;
+// 	}
+// 	.slick-prev{
+// 		left: -12%;
+// 	}
+// 	.slick-next{
+// 		left: 102%;
+// 	}
+// 	.section_contact__adres_wrap{
+// 		margin-top: 30px;
+// 		border-top: 1px solid rgba(0,206,209,.3);
+// 		h4{
+// 			padding-top: 15px;
+// 		}
+// 	}
+// 	h2{
+// 		font-size: 20px;
+// 	}
+// 	.comments_item{
+// 		.user_comments{
+// 			.user_name{
+// 				font-size: 16px;
+// 			}
+// 			p{
+// 				font-size: 12px;
+// 			}
+// 		}
+// 	}
+// 	.btn_see_more{
+// 		font-size: 14px;
+// 		.d_flex(center; center);
+// 		padding-top: 2px;
+// 		padding-bottom: 2px;
+
+// 	}
+// 	.description_title{
+// 		font-size: 22px;
+// 	}
+// 	.details_of_tour{
+// 		.icon{
+// 			display: none;
+// 		}
+// 	}
+// 	.included_list li{
+// 		padding-bottom: 5px;
+// 		&:first-of-type{
+// 			padding-bottom: 5px;
+// 		}
+// 	}
+// 	.book_tour_wrap{
+// 		.title{
+// 			margin-bottom: 5px;
+// 		}
+// 	}
+// 	.book_form{
+// 		.input_book {
+// 			padding-bottom: 0;
+// 			margin-bottom: 10px;
+// 		}
+// 	}
+// 	.parallax-container{
+// 		img{
+// 			transform: translate3d(-50%, 25px, 0px) !important;
+// 		}
+// 	}
+// 	.header_section{
+// 		.parallax-container{
+// 			height: 400px;
+// 			img{
+// 				transform: translate3d(-50%, 1px, 0px) !important;
+// 			}
+// 		}
+// 	}
+// 	.card{
+// 		.card_header{
+// 			.card_title{
+// 				font-size: 22px;
+// 			}
+// 		}
+// 		.card_content{
+// 			.content_wrap{
+// 				font-size: 16px;
+// 			}
+// 		}
+// 	}
+// 	.nav_description{
+// 		margin-bottom: 25px;
+// 	}
+
+}	
+// /* Extra Small Devices, Phones */
+// @media only screen and (max-width : 576px) {
+// 	.main_slogan_wrap {
+// 		.slogan{
+// 			font-size: 18px;
+// 		}
+// 	}
+// 	section:not(.main_section):not(.header_section):not(.tour_description):not(.tour_parallax){
+// 		padding-top: 15px;
+// 	}
+// 	.main_menu{
+// 		ul{
+// 			li{
+// 				padding: 3px 5px;
+// 				a{
+// 					padding: 3px 0;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.main_menu{
+// 		padding-left: 20px;
+// 	}
+// 	.contact__form{
+// 		font-size: 12px;
+// 		.section_contact__input{
+// 			font-size: 14px;
+// 		}
+// 	}
+// 	.section_contact__adres_wrap{
+// 		a{
+// 			font-size: 12px;
+// 		}
+// 	}
+// 	.slick-prev{
+// 		left: -15%;
+// 	}
+// 	.parallax-container{
+// 		height: 200px;
+// 		img{
+// 			transform: translate3d(-50%, 0px, 0px) !important;
+// 		}
+// 	}
+// 	.nav_description{
+// 		margin-bottom: 15px;
+// 		.open_tab {
+// 			padding-top: 7px;
+// 			padding-bottom: 7px;
+// 			font-size: 14px;
+// 		}
+// 	}
+// 	.after_title_text{
+// 		padding-top: 0;
+// 	}
+// 	.information_text{
+// 		font-size: 14px;
+// 	}
+// 	.card{
+// 		.card_header{
+// 			.card_title{
+// 				font-size: 20px;
+// 			}
+// 		}
+// 		.card_content{
+// 			.content_wrap{
+// 				font-size: 14px;
+// 			}
+// 		}
+// 	}
+// 	.details_of_tour{
+// 		padding-top: 10px;
+// 		padding-bottom: 10px;
+// 		li:first-of-type{
+// 			padding-right: 10px;
+// 		}
+// 	}
+// 	.description_title{
+// 		font-size: 18px;
+// 	}
+// 	.header_section  .parallax-container{
+// 		height: 330px;
+// 	}
+	
+
+// }
+// @media only screen and (max-width : 508px) {
+// 	.main_menu {
+// 		ul{
+// 			flex-direction: row;
+// 			li{
+// 				.d_flex(center; center);
+// 				padding: 10px;
+// 				flex-grow: 0;
+// 				.submenu{
+// 					transform-origin: 0 0;
+// 					transform: scale(0, 0);
+// 					left: 100%;
+// 					top: 47%;
+// 				}
+// 				&:hover{
+// 					.submenu{
+// 						transform: scale(1, 1);
+// 					}
+// 				}
+// 			}
+
+// 		}
+// 	}
+
+// }		
+@media only screen and (max-width : 375px) {
+	.main_slogan_wrap {
+		.slogan{
+			font-size: 15px;
+		}
+	}
+	.book_form{
+		.input_book {
+			margin-bottom: 0;
+		}
+	}
+	.section_form__btn{
+		margin-top: 10px;
+	}
+	.details_of_tour{
+		li:first-of-type{
+			padding-right: 6px;
+		}
+	}
+	.header_section .parallax-container .country_name{
+		font-style: 24px;
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width :576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
