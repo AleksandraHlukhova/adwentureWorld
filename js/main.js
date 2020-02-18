@@ -119,41 +119,35 @@
 
 	/////////////toodle_menu_mobile
 
-	const toogleMenuMobile = document.querySelector('.menu_wrap');
+	const header = document.querySelector('.header');
+	const body = document.querySelector('body');
+	const toogleMenuMobile = document.querySelector('.main_menu');
+	const buttonMenu = document.querySelector('.menu_wrap');
 
-
-	let openMenu = (event) => {
-		let target = event.target;
-		if(target && !target.classList.contains('active')){
-			let body = document.querySelector('body');
-			body.classList.add('menu_opened');
-			toogleMenuMobile.classList.add('active');
-			if(body.classList.contains('menu_opened')){
-				let mainMenu = document.querySelector('.main_menu');
-				console.log(mainMenu)
-				mainMenu.style.transform = 'translateX(0)';
-				// toogleMenuMobile.addEventListener('click', closeMenu);
+	let openMenu = (ev) => {
+		let target = ev.target;
+		console.log(target);
+		if(target.matches('.menu_wrap') || target.matches('.menu_wrap span')){
+			console.log('11111');
+			if(!buttonMenu.classList.contains('active')){
+				console.log('!!!!');
+				body.classList.add('menu_opened');
+				toogleMenuMobile.style.transform = 'translateX(0)';
+				buttonMenu.classList.add('active');
+			}else if(buttonMenu.classList.contains('active')){
+				closeMenu();
 			}
 		}
 	}
 
-	let closeMenu = (event) => {
-		let target = event.target;
-		console.log(target)
-		if(target.matches('.menu_wrap.active') || target.matches('.main_menu .menu_wrap.active span')){
-			alert('sdgd')
-			let body = document.querySelector('body');
-			if(toogleMenuMobile.classList.contains('active')){
-				let mainMenu = document.querySelector('.main_menu');
-				body.classList.remove('menu_opened');
-				toogleMenuMobile.classList.remove('active');
-				mainMenu.style.transform = 'translateX(100%)';
-			}
-		}
-
+	let closeMenu = (ev) => {
+		console.log('0000')
+		body.classList.remove('menu_opened');
+		toogleMenuMobile.style.transform = 'translateX(-100%)';
+		buttonMenu.classList.remove('active');
 	}
-	toogleMenuMobile.addEventListener('click', openMenu);
-	toogleMenuMobile.addEventListener('click', closeMenu);
+
+	header.addEventListener('click', openMenu);
 
 
 
